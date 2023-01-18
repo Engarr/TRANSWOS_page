@@ -1,0 +1,50 @@
+.aboutus {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.aboutusBox {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.textBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.678);
+	text-align: center;
+	padding: 0.5em 1em;
+	margin-bottom: 2em;
+	border-radius: 10px;
+	font-size: 1.5em;
+}
+.textBox h2{
+	color: var(--text);
+}
+.textBox p{
+	color: var(--small-text);
+}
+.image {
+	margin: 1em 2em;
+	border-radius: 5px;
+	box-shadow: 0 0 10px black;
+	height: 100%;
+	min-height: 200px;
+	max-height: 600px;
+	width: 100%;
+	min-width: 300px;
+	max-width: 700px;
+}
+@media only screen and (max-width: 768px) {
+	.aboutusBox{
+		width: 90%;
+	}
+	.textBox{
+		font-size: .9em;
+	}
+}
