@@ -25,6 +25,7 @@
 }
 .logo,
 .logoSmall {
+	letter-spacing: 2px;
 	font-size: 2em;
 	font-family: 'Sofia Sans Condensed', sans-serif;
 }
@@ -100,6 +101,7 @@
 	}
 	.burger {
 		display: block;
+		
 	}
 	.bigPages {
 		display: none;

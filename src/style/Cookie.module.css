@@ -1,0 +1,12 @@
+.politycyBox {
+	position: relative;
+	top: 100px;
+    padding: 0.5em;
+   
+}
+.politycyBox ul {
+	list-style: decimal;
+    
+}.politycyBox li{
+    margin-top: 0.5em;
+}

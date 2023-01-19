@@ -1,0 +1,33 @@
+.cookieBaner {
+	position: relative;
+	top: 100px;
+	background-color: rgba(255, 255, 255, 0.651);
+	width: 100%;
+}
+.cookieBanerBox {
+	font-size: 0.5em;
+	text-align: center;
+}
+.cookieBanerBox button {
+	padding: 0.5em;
+	margin-left: 0.5em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+.cookieBanerBox button:hover {
+	background-color: rgb(177, 173, 173);
+}
+.cookieBanerBox a{
+    color: blue;
+}
+@media only screen and (max-width: 768px) {
+    .cookieBaner {
+        font-size: 1.5em;
+    }
+    .cookieBanerBox button{
+        font-size: 1em;
+       
+    }
+}

@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Nav from './Components/Nav';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Footer from './Components/Footer';
+import Cookie from './pages/Cookie';
 
 function App() {
 	return (
@@ -11,16 +11,17 @@ function App() {
 			<header>
 				<Nav />
 			</header>
-			<section>
+			<main>
 				<Routes>
-					<Route path='/' element={<Navigate to='/home' />} />
+					<Route path='/*' element={<Navigate to='/home' />} />
 					<Route path='/home' element={<Home />} />
 					<Route path='/kontakt' element={<Contact />} />
+					<Route path='/polityka' element={<Cookie />} />
 				</Routes>
-			</section>
-			<footer>
-				<Footer/>
-			</footer>
+			</main>
+			
+				
+			
 		</div>
 	);
 }

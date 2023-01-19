@@ -1,0 +1,68 @@
+.contactBox {
+	position: relative;
+	top: 100px;
+	height: 100vh;
+}
+.dataBox {
+	position: relative;
+	width: 80%;
+	left: 50%;
+	transform: translate(-50%);
+	padding: 1em 2em;
+	font-size: 1.2em;
+	text-align: center;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.527);
+	color: var(--text);
+	margin-bottom: 1em;
+	font-weight: bold;
+	max-width: 1400px;
+}
+
+.map {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	width: 85%;
+	height: 600px;
+
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.callBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.callBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em 2em;
+	background-color: #4caf50;
+	color: white;
+	text-decoration: none;
+	border: none;
+	border-radius: 25px;
+	width: 300px;
+	height: 50px;
+	font-size: 1em;
+	cursor: pointer;
+}
+.callBox p {
+	margin-left: 1em;
+}
+@media only screen and (max-width: 768px) {
+	.dataBox {
+		width: 95%;
+
+		font-size: 1em;
+	}
+	.map {
+		width: 95%;
+	}
+}

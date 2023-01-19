@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaWindowClose } from 'react-icons/fa';
 import Modal from './Modal';
+import CookieBaner from './CookieBaner';
 
 const Nav = () => {
 	const [page, setPage] = useState('');
@@ -14,7 +15,7 @@ const Nav = () => {
 		setPage(e.target.textContent);
 	};
 	const homePage = () => {
-		setPage('Home');
+		setPage('Strona główna');
 	};
 
 	const navHandler = () => {
@@ -22,11 +23,12 @@ const Nav = () => {
 	};
 	const closeMenuHandler = () => {
 		setShowMenu(false);
-		setPage('Home');
+		setPage('Strona główna');
 	};
 
 	return (
 		<div className={classes.navBox}>
+			<CookieBaner />
 			<div className={classes.mainNav}>
 				<div className={classes.logo}>
 					<NavLink to='/home' onClick={homePage}>
@@ -50,7 +52,7 @@ const Nav = () => {
 								TRANSWOS
 							</NavLink>
 							<NavLink to='/home'>
-								<button onClick={closeMenuHandler}>Home</button>
+								<button onClick={closeMenuHandler}>Strona główna</button>
 							</NavLink>
 
 							<NavLink to='/kontakt'>
@@ -64,8 +66,8 @@ const Nav = () => {
 					<NavLink to='/home'>
 						<button
 							onClick={changePage}
-							className={page === 'Home' ? classes.active : ''}>
-							Home
+							className={page === 'Strona główna' ? classes.active : ''}>
+							Strona główna
 						</button>
 					</NavLink>
 
