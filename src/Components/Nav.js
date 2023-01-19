@@ -15,7 +15,7 @@ const Nav = () => {
 		setPage(e.target.textContent);
 	};
 	const homePage = () => {
-		setPage('Strona główna');
+		setPage('');
 	};
 
 	const navHandler = () => {
@@ -23,7 +23,7 @@ const Nav = () => {
 	};
 	const closeMenuHandler = () => {
 		setShowMenu(false);
-		setPage('Strona główna');
+		setPage('');
 	};
 
 	return (
@@ -31,7 +31,7 @@ const Nav = () => {
 			<CookieBaner />
 			<div className={classes.mainNav}>
 				<div className={classes.logo}>
-					<NavLink to='/home' onClick={homePage}>
+					<NavLink to='/' onClick={homePage}>
 						TRANSWOŚ
 					</NavLink>
 				</div>
@@ -46,12 +46,12 @@ const Nav = () => {
 								onClick={closeMenuHandler}
 							/>
 							<NavLink
-								to='/home'
+								to='/'
 								onClick={closeMenuHandler}
 								className={classes.logoSmall}>
 								TRANSWOS
 							</NavLink>
-							<NavLink to='/home'>
+							<NavLink to='/'>
 								<button onClick={closeMenuHandler}>Strona główna</button>
 							</NavLink>
 
@@ -63,10 +63,10 @@ const Nav = () => {
 				)}
 
 				<div className={classes.bigPages}>
-					<NavLink to='/home'>
+					<NavLink to='/'>
 						<button
 							onClick={changePage}
-							className={page === 'Strona główna' ? classes.active : ''}>
+							className={page === '' ? classes.active : ''}>
 							Strona główna
 						</button>
 					</NavLink>

@@ -13,8 +13,8 @@ function App() {
 			</header>
 			<main>
 				<Routes>
-					<Route path='/*' element={<Navigate to='/home' />} />
-					<Route path='/home' element={<Home />} />
+					<Route path='/*' element={<Navigate to='/' />} />
+					<Route path='/' element={<Home />} />
 					<Route path='/kontakt' element={<Contact />} />
 					<Route path='/polityka' element={<Cookie />} />
 				</Routes>
