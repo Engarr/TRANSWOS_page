@@ -3,7 +3,8 @@
 }
 
 html {
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Prompt', sans-serif;
+	font-family: 'Unbounded', cursive;
 }
 
 body {
@@ -19,6 +20,7 @@ a {
 :root {
 	--background-color: #76787a;
 	--button-nav: #f1ab13;
-	--text: #dd9830;
+	--text: #ffffff;
 	--small-text: white;
+	--logo: rgb(255, 255, 255);
 }

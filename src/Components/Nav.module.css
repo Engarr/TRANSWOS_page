@@ -1,5 +1,5 @@
 .navBox {
-	background-color: rgba(250, 250, 250, 0.445);
+	background-color: rgba(250, 250, 250, 0.123);
 	width: 100%;
 	position: fixed;
 	display: flex;
@@ -22,16 +22,33 @@
 	width: 100%;
 	max-width: 1400px;
 	height: 100%;
+	overflow: hidden;
+}
+.logoIcon {
+	position: absolute;
+	font-size: 200px;
+	
+	top: -20px;
+	z-index: -10;
+	transform: rotate(90deg);
+	color: rgba(255, 255, 255, 0.247);
 }
 .logo,
 .logoSmall {
-	letter-spacing: 2px;
-	font-size: 2em;
-	font-family: 'Sofia Sans Condensed', sans-serif;
+	letter-spacing: 3px;
+	font-size: 1em;
+	font-family: 'Unbounded', sans-serif;
+	color: var(--logo);
+	z-index: 10;
 }
 .logoSmall {
 	margin-bottom: 0.5em;
 	margin-top: 1em;
+}
+
+.logo a,
+.logoSmall a {
+	color: var(--logo);
 }
 
 .smallPages {
@@ -56,34 +73,63 @@
 }
 .bigPages {
 	display: flex;
-	width: 30%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
 }
-.bigPages button,
-.smallPages button {
-	cursor: pointer;
+.bigPages a {
+	position: relative;
+	display: inline-block;
+	margin-top: 2em;
 	padding: 10px 20px;
-	margin: 0.5em 1em;
-	background-color: var(--button-nav);
-	border-radius: 5px;
-	border: none;
-
-	transition: box-shadow 0.2s;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.2s;
+	font-size: 14px;
+	transition: 0.3s;
 }
-.bigPages button {
-	width: 150px;
-	color: white;
-}
-.bigPages button:hover {
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.555);
+.bigPages a span {
+	position: absolute;
+	display: block;
 }
 
-.active {
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.555);
+.bigPages a span:nth-child(1),
+.bigPages a span:nth-child(2) {
+	top: -100%;
+	width: 1px;
+	height: 100%;
+	transform: rotate(30deg);
+	background: linear-gradient(90deg, transparent, #a6aaad);
+	transition: 0.5s;
 }
+
+.bigPages a span:nth-child(1) {
+	left: 16px;
+}
+.bigPages a span:nth-child(2) {
+	right: -9px;
+}
+
+.bigPages a:hover span:nth-child(1),
+.bigPages a:hover span:nth-child(2) {
+	top: -100%;
+	height: 200%;
+	transform: rotate(30deg);
+	background: linear-gradient(180deg, transparent, #a6aaad88);
+	width: 1px;
+}
+
+.bigPages a:hover span:nth-child(1) {
+	left: 16px;
+}
+.bigPages a:hover span:nth-child(2) {
+	right: 0px;
+}
+.bigPages a:hover {
+	color: #a6aaad;
+}
+.active a {
+	color: #d8dfe4;
+}
+
 .burger {
 	display: none;
 	font-size: 1.5em;
@@ -101,7 +147,6 @@
 	}
 	.burger {
 		display: block;
-		
 	}
 	.bigPages {
 		display: none;

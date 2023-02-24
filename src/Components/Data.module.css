@@ -1,10 +1,11 @@
 .dataBox {
-	position: relative;
+	position: absolute;
 	width: 100%;
-	height: 400px;
+	height: 100vh;
 	text-align: center;
-	color: rgb(221, 152, 48);
+	color: white;
 	font-size: 1.2em;
+	top: 0;
 }
 .data {
 	display: flex;
@@ -16,20 +17,60 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	margin-top: 2em;
-	padding: 1em 2em;
 }
-.data p {
+.textBox {
+	position: absolute;
+	top: 200px;
+}
+.textBox h2 {
+	letter-spacing: 1px;
+	font-size: 2em;
+}
+.textBox p {
 	font-weight: bold;
 }
 .img {
 	position: absolute;
-	background-position: co;
+	background-position: center;
 	background-image: cover;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+.arrowBox {
+	position: absolute;
+	bottom: 100px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #ffffff63;
+	animation: arrow 3s  infinite ease-in;
+	cursor: pointer;
+}
+.arrow {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: black;
+}
+
+@keyframes arrow {
+	0% {
+		bottom: 100px;
+	}
+	25% {
+		bottom: 80px;
+	}
+	50% {
+		bottom: 90px;
+	}
+	75% {
+		bottom: 80px;
+	}
+	100% {
+		bottom: 100px;
+	}
 }
 @media only screen and (max-width: 768px) {
 	.dataBox {

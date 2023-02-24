@@ -6,9 +6,10 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaWindowClose } from 'react-icons/fa';
 import Modal from './Modal';
 import CookieBaner from './CookieBaner';
+import { GiTireTracks } from 'react-icons/gi';
 
 const Nav = () => {
-	const [page, setPage] = useState('');
+	const [page, setPage] = useState('Strona główna');
 	const [showMenu, setShowMenu] = useState(false);
 
 	const changePage = (e) => {
@@ -26,12 +27,14 @@ const Nav = () => {
 		setPage('');
 	};
 
+	
 	return (
 		<div className={classes.navBox}>
 			<CookieBaner />
 			<div className={classes.mainNav}>
 				<div className={classes.logo}>
 					<NavLink to='/' onClick={homePage}>
+						<GiTireTracks className={classes.logoIcon} />
 						TRANSWOŚ
 					</NavLink>
 				</div>
@@ -39,7 +42,7 @@ const Nav = () => {
 
 				{showMenu && (
 					<>
-					<Modal show={showMenu} closeMenuHandler={closeMenuHandler} />
+						<Modal show={showMenu} closeMenuHandler={closeMenuHandler} />
 						<div className={classes.smallPages}>
 							<FaWindowClose
 								className={classes.close}
@@ -51,8 +54,9 @@ const Nav = () => {
 								className={classes.logoSmall}>
 								TRANSWOS
 							</NavLink>
+
 							<NavLink to='/'>
-								<button onClick={closeMenuHandler}>Strona główna</button>
+								<button onClick={closeMenuHandler}></button>
 							</NavLink>
 
 							<NavLink to='/kontakt'>
@@ -63,21 +67,28 @@ const Nav = () => {
 				)}
 
 				<div className={classes.bigPages}>
-					<NavLink to='/'>
-						<button
+					<div className={page === 'Strona główna' ? classes.active : ''}>
+						<NavLink
+							to='/'
 							onClick={changePage}
-							className={page === '' ? classes.active : ''}>
+							>
+							<span></span>
+							<span></span>
+							<span></span>
 							Strona główna
-						</button>
-					</NavLink>
-
-					<NavLink to='/kontakt'>
-						<button
+						</NavLink>
+					</div>
+					<div className={page === 'Kontakt' ? classes.active : ''}>
+						<NavLink
+							to='/kontakt'
 							onClick={changePage}
-							className={page === 'Kontakt' ? classes.active : ''}>
+							>
+							<span></span>
+							<span></span>
+							<span></span>
 							Kontakt
-						</button>
-					</NavLink>
+						</NavLink>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -10,8 +10,8 @@ const Home = () => {
 	return (
 		<div className={classes.home}>
 			<Data />
-			<Aboutus/>
-			<Footer />
+			{/* <Aboutus/> */}
+			{/* <Footer /> */}
 		</div>
 	);
 };
