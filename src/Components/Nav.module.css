@@ -1,5 +1,5 @@
 .navBox {
-	background-color: rgba(250, 250, 250, 0.123);
+	background-color: rgba(250, 250, 250, 0.041);
 	width: 100%;
 	position: fixed;
 	display: flex;
@@ -27,7 +27,7 @@
 .logoIcon {
 	position: absolute;
 	font-size: 200px;
-	
+
 	top: -20px;
 	z-index: -10;
 	transform: rotate(90deg);
@@ -36,8 +36,9 @@
 .logo,
 .logoSmall {
 	letter-spacing: 3px;
-	font-size: 1em;
-	font-family: 'Unbounded', sans-serif;
+	font-size: 1.5em;
+	font-family: 'Genos', sans-serif;
+	font-weight: 600;
 	color: var(--logo);
 	z-index: 10;
 }
@@ -128,6 +129,7 @@
 }
 .active a {
 	color: #d8dfe4;
+	
 }
 
 .burger {

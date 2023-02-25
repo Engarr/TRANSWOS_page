@@ -3,6 +3,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	top: 0;
 }
 .aboutusBox {
 	width: 80%;

@@ -9,9 +9,9 @@ const Data = () => {
 			<img src={road} className={classes.img} alt='road' />
 			<div className={classes.data}>
 				<div className={classes.textBox}>
-					<h2>WOŚ STANISŁAW TRANSWOŚ</h2>
-					<h3>Usługi holowania pojazdów </h3>
+					<h1 >Usługi holowania pojazdów </h1>
 					<p>Pomoc drogowa do 14 ton</p>
+					<h3>Zadzwoń!</h3>
 					<CallBtn />
 				</div>
 				<div className={classes.arrowBox}>
