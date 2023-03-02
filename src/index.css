@@ -7,9 +7,8 @@ html {
 }
 
 body {
-	height: 100%;
 	margin: 0;
-	background-color: var(--background-color);
+	background-color: white;
 }
 a {
 	text-decoration: none;
@@ -17,7 +16,7 @@ a {
 }
 
 :root {
-	--background-color: #76787a;
+	--background-color: ;
 	--button-nav: #f1ab13;
 	--text: #ffffff;
 	--small-text: white;

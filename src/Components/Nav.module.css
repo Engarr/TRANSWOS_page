@@ -24,22 +24,26 @@
 	height: 100%;
 	overflow: hidden;
 }
-.logoIcon {
+
+.logoIcon,
+.logoIconScrollDown {
 	position: absolute;
 	font-size: 200px;
-
 	top: -20px;
 	z-index: -10;
 	transform: rotate(90deg);
 	color: rgba(255, 255, 255, 0.247);
 }
+.logoIconScrollDown {
+	color: rgba(66, 66, 66, 0.308);
+}
 .logo,
-.logoSmall {
+.logoSmall,
+.logoScrollDown {
 	letter-spacing: 3px;
 	font-size: 1.5em;
 	font-family: 'Genos', sans-serif;
 	font-weight: 600;
-	color: var(--logo);
 	z-index: 10;
 }
 .logoSmall {
@@ -50,6 +54,9 @@
 .logo a,
 .logoSmall a {
 	color: var(--logo);
+}
+.logoScrollDown a {
+	color: black;
 }
 
 .smallPages {
@@ -128,8 +135,7 @@
 	color: #a6aaad;
 }
 .active a {
-	color: #d8dfe4;
-	
+	color: #f9f9fa;
 }
 
 .burger {

@@ -1,92 +1,9 @@
 .aboutus {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	top: 0;
-}
-.aboutusBox {
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.textBox {
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	/* background-color: rgba(0, 0, 0, 0.678); */
-	text-align: center;
-	padding: 0.5em 1em;
-	margin-bottom: 2em;
-	border-radius: 10px;
-	font-size: 1.5em;
-}
-.textBox h2 {
-	text-transform: uppercase;
-	text-align: center;
+	position: relative;
+	height: 100vh;
 	width: 100%;
-	color: var(--text);
-}
-.textBox p {
-	color: var(--small-text);
 }
 
-.image {
-	margin: 1em 2em;
-	border-radius: 5px;
-	box-shadow: 0 0 10px black;
-	height: 100%;
-	min-height: 200px;
-	max-height: 600px;
-	width: 100%;
-	min-width: 300px;
-	max-width: 700px;
-}
-.mark {
-	color: var(--text);
-	border-radius: 50%;
-	font-size: 2.5em;
-}
-.markBgc {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #fff;
-	padding: 0.5em;
-	border-radius: 50%;
-}
-.markBox {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.2em;
-	margin: 1em;
-}
-.markBox p {
-	margin-left: 1em;
-	text-align: start;
-}
-.truck{
-	font-size: 4em;
-	background-color: #fff;
-	padding: 5px;
-	border-radius: 5px;
-}
-
-@media only screen and (max-width: 768px) {
-	.aboutusBox {
-		width: 90%;
-	}
-	.textBox {
-		font-size: 0.9em;
-	}
-	.mark {
-		color: var(--text);
-		border-radius: 50%;
-		font-size: 2em;
-	}
-}

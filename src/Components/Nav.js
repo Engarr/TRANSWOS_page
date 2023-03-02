@@ -5,12 +5,17 @@ import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaWindowClose } from 'react-icons/fa';
 import Modal from './Modal';
+import { useStateContext } from '../context/StateContext';
+
 import CookieBaner from './CookieBaner';
 import { GiTireTracks } from 'react-icons/gi';
 
 const Nav = () => {
 	const [page, setPage] = useState('Strona główna');
 	const [showMenu, setShowMenu] = useState(false);
+
+	const { scrollPosition } = useStateContext();
+	console.log(scrollPosition);
 
 	const changePage = (e) => {
 		setPage(e.target.textContent);
@@ -27,14 +32,17 @@ const Nav = () => {
 		setPage('');
 	};
 
-	
+	const logoCss = scrollPosition < 886 ? classes.logo : classes.logoScrollDown;
+	const iconCss =
+		scrollPosition < 886 ? classes.logoIcon : classes.logoIconScrollDown;
+
 	return (
 		<div className={classes.navBox}>
 			<CookieBaner />
 			<div className={classes.mainNav}>
-				<div className={classes.logo}>
+				<div className={logoCss}>
 					<NavLink to='/' onClick={homePage}>
-						<GiTireTracks className={classes.logoIcon} />
+						<GiTireTracks className={iconCss} />
 						TRANSWOŚ
 					</NavLink>
 				</div>
@@ -68,10 +76,7 @@ const Nav = () => {
 
 				<div className={classes.bigPages}>
 					<div className={page === 'Strona główna' ? classes.active : ''}>
-						<NavLink
-							to='/'
-							onClick={changePage}
-							>
+						<NavLink to='/' onClick={changePage}>
 							<span></span>
 							<span></span>
 							<span></span>
@@ -79,10 +84,7 @@ const Nav = () => {
 						</NavLink>
 					</div>
 					<div className={page === 'Kontakt' ? classes.active : ''}>
-						<NavLink
-							to='/kontakt'
-							onClick={changePage}
-							>
+						<NavLink to='/kontakt' onClick={changePage}>
 							<span></span>
 							<span></span>
 							<span></span>
