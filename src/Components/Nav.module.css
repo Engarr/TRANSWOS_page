@@ -54,35 +54,69 @@
 	margin-top: 1em;
 }
 
-.logo a,
-.logoSmall a {
+.logo a {
 	color: var(--logo);
 }
-
+.logoSmall {
+	color: black;
+}
 .logoScrollDown a {
 	color: var(--logo-ScrollDown);
 }
-
+/* BURGER MENU */
 .smallPages {
-	display: none;
-}
-.smallPages a {
-	width: 100%;
+	position: absolute;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: #f9f9fa;
+	top: 0;
+	height: 300px;
+	width: 100%;
+	z-index: 1000;
+	overflow: visible;
+}
+.logoBox {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 30px;
+	left: 0;
+	padding: 10px 40px;
+	width: 100%;
+}
+.logoBox a {
+	font-size: 2em;
+}
+.close {
+	font-size: 1.5em;
+}
+.linksBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.linksBox a {
+	padding: 10px 20px;
+	font-size: 1.2em;
+}
+.currentPage,
+.inActivePage {
+	margin-top: 2em;
+}
+.currentPage a {
+	color: rgb(170, 168, 168);
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+.inActivePage a {
+	color: rgb(0, 0, 0);
 }
 
-.smallPages button {
-	position: relative;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 80%;
-	background: black;
-	font-size: 1em;
-}
+/* BURGER MENU */
 .bigPages {
 	display: flex;
 }
@@ -101,7 +135,7 @@
 .navColor a {
 	color: #ffffff;
 }
-.navColorScrollDown{
+.navColorScrollDown {
 	color: #000000;
 }
 
@@ -159,12 +193,7 @@
 .burger {
 	display: none;
 	font-size: 1.5em;
-}
-.close {
-	position: absolute;
-	top: 10%;
-	right: 10%;
-	font-size: 1.5em;
+	color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -176,16 +205,5 @@
 	}
 	.bigPages {
 		display: none;
-	}
-	.smallPages {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		position: absolute;
-		background-color: #fff;
-		top: 0;
-		width: 100%;
-		height: 300px;
 	}
 }

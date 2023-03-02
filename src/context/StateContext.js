@@ -8,7 +8,6 @@ export const StateContext = ({ children }) => {
 		function handleScroll() {
 			const position = window.pageYOffset;
 			setScrollPosition(position);
-			console.log(scrollPosition);
 		}
 
 		window.addEventListener('scroll', handleScroll);

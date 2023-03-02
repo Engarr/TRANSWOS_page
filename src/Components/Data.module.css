@@ -1,25 +1,24 @@
 .dataBox {
-	width: 100%;
-	height: 100%;
+	height: 100vh;
 	text-align: center;
 	color: white;
 	font-size: 1.2em;
 	top: 0;
 }
 .data {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
-	background-color: rgba(0, 0, 0, 0.678);
 	top: 0;
 	width: 100%;
 	height: 100%;
+	background-color: rgba(0, 0, 0, 0.678);
 }
 .textBox {
 	position: absolute;
-	top: 200px;
+	top: 150px;
 	text-transform: uppercase;
 	animation: slide 2s forwards linear;
 }
@@ -28,7 +27,9 @@
 	position: relative;
 	letter-spacing: 1px;
 	font-size: 2em;
-	
+}
+.textBox h3 {
+	letter-spacing: 2px;
 }
 @keyframes slide {
 	0% {
@@ -87,6 +88,10 @@
 }
 @media only screen and (max-width: 768px) {
 	.dataBox {
-		font-size: 1em;
+		font-size: 0.8em;
+	}
+	.textBox h1 {
+		font-size: 1.4em;
+		letter-spacing: 0.5px;
 	}
 }

@@ -16,6 +16,7 @@ const Data = () => {
 				<div className={classes.textBox}>
 					<h1>Usługi holowania pojazdów </h1>
 					<p>Pomoc drogowa do 14 ton</p>
+					<p>Potrzebujesz pomocy?</p>
 					<h3>Zadzwoń!</h3>
 					<CallBtn />
 				</div>

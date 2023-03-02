@@ -27,9 +27,10 @@ const Nav = () => {
 	const navHandler = () => {
 		setShowMenu((prev) => (prev = !prev));
 	};
-	const closeMenuHandler = () => {
+	const closeMenuHandler = (e) => {
 		setShowMenu(false);
-		setPage('');
+
+		setPage(e.target.textContent);
 	};
 
 	const logoCss = scrollPosition < 886 ? classes.logo : classes.logoScrollDown;
@@ -52,32 +53,6 @@ const Nav = () => {
 				</div>
 				<GiHamburgerMenu className={classes.burger} onClick={navHandler} />
 
-				{showMenu && (
-					<>
-						<Modal show={showMenu} closeMenuHandler={closeMenuHandler} />
-						<div className={classes.smallPages}>
-							<FaWindowClose
-								className={classes.close}
-								onClick={closeMenuHandler}
-							/>
-							<NavLink
-								to='/'
-								onClick={closeMenuHandler}
-								className={classes.logoSmall}>
-								TRANSWOS
-							</NavLink>
-
-							<NavLink to='/'>
-								<button onClick={closeMenuHandler}></button>
-							</NavLink>
-
-							<NavLink to='/kontakt'>
-								<button onClick={closeMenuHandler}>Kontakt</button>
-							</NavLink>
-						</div>
-					</>
-				)}
-
 				<div className={classes.bigPages}>
 					<div className={page === 'Strona główna' ? activeCss : navColor}>
 						<NavLink to='/' onClick={changePage}>
@@ -97,6 +72,52 @@ const Nav = () => {
 					</div>
 				</div>
 			</div>
+			{showMenu && (
+				<div className={classes.smallPages}>
+					<Modal show={showMenu} closeMenuHandler={closeMenuHandler} />
+					<div>
+						<div className={classes.logoBox}>
+							<div>
+								<NavLink
+									to='/'
+									onClick={closeMenuHandler}
+									className={classes.logoSmall}>
+									{/* <GiTireTracks className={classes.logoIcon} /> */}
+									TRANSWOŚ
+								</NavLink>
+							</div>
+							<FaWindowClose
+								className={classes.close}
+								onClick={closeMenuHandler}
+							/>
+						</div>
+
+						<div className={classes.linksBox}>
+							<div
+								className={
+									page === 'Strona główna'
+										? classes.currentPage
+										: classes.inActivePage
+								}>
+								<NavLink to='/' onClick={closeMenuHandler}>
+									Strona główna
+								</NavLink>
+							</div>
+
+							<div
+								className={
+									page === 'Kontakt'
+										? classes.currentPage
+										: classes.inActivePage
+								}>
+								<NavLink to='/kontakt' onClick={closeMenuHandler}>
+									Kontakt
+								</NavLink>
+							</div>
+						</div>
+					</div>
+				</div>
+			)}
 		</div>
 	);
 };
