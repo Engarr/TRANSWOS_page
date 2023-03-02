@@ -7,7 +7,13 @@ import { SlArrowDown } from 'react-icons/sl';
 const Data = () => {
 	function scrollToSection(id) {
 		const element = document.getElementById(id);
-		element.scrollIntoView({ behavior: 'smooth' });
+		const offset = element.getBoundingClientRect().top + window.pageYOffset;
+		const bodyMargin = parseInt(getComputedStyle(document.body).marginTop, 10);
+		const targetOffset = offset - bodyMargin - 80;
+		window.scrollTo({
+			top: targetOffset,
+			behavior: 'smooth',
+		});
 	}
 	return (
 		<section className={classes.dataBox} id='home'>

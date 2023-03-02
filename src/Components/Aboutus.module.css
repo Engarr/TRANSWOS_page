@@ -1,10 +1,121 @@
 .aboutus {
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
 	position: relative;
-	height: 100vh;
+
 	width: 100%;
-	
 }
 
+.cardContainer {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+.aboutusTextBox {
+	/* position: relative; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+	max-width: 1000px;
+	letter-spacing: 1px;
+}
+.aboutusTextBox h2 {
+	font-size: 2em;
+}
+.cardBox {
+	position: relative;
+	margin: 10px 20px;
+	width: 400px;
+	height: 500px;
+	perspective: 800px;
+	border-radius: 15px;
+}
+.image {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	border-radius: 15px;
+	transition: 0.8s;
+	background-color: #dddddd5e;
+}
+
+.img {
+	height: 300px;
+	width: 400px;
+}
+.more {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 50px;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	box-shadow: 0 0 5px 1px rgb(167, 163, 163);
+	animation: pulse 2s forwards infinite;
+}
+.cardTextBox {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px;
+	border-radius: 15px;
+	text-align: center;
+	transition: 0.8s;
+	opacity: 0;
+	background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+	transform: rotateX(-180deg);
+}
+.cardTextBox h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.cardTextBox div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.cardTextBox p {
+	margin-left: 5px;
+}
+
+.cardBox:hover .cardTextBox {
+	opacity: 1;
+	transform: rotateX(0deg);
+}
+
+.cardBox:hover .image {
+	opacity: 0;
+	transform: rotateX(180deg);
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

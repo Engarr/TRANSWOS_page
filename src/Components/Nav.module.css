@@ -177,10 +177,6 @@
 	right: 0px;
 }
 
-.bigPages a:hover {
-	color: #a6aaad;
-}
-
 .active a {
 	color: #f9f9fa;
 	font-weight: bold;
