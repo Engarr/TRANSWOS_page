@@ -35,6 +35,10 @@ const Nav = () => {
 	const logoCss = scrollPosition < 886 ? classes.logo : classes.logoScrollDown;
 	const iconCss =
 		scrollPosition < 886 ? classes.logoIcon : classes.logoIconScrollDown;
+	const activeCss =
+		scrollPosition < 886 ? classes.active : classes.activeScrollDown;
+	const navColor =
+		scrollPosition < 886 ? classes.navColor : classes.navColorScrollDown;
 
 	return (
 		<div className={classes.navBox}>
@@ -75,7 +79,7 @@ const Nav = () => {
 				)}
 
 				<div className={classes.bigPages}>
-					<div className={page === 'Strona główna' ? classes.active : ''}>
+					<div className={page === 'Strona główna' ? activeCss : navColor}>
 						<NavLink to='/' onClick={changePage}>
 							<span></span>
 							<span></span>
@@ -83,7 +87,7 @@ const Nav = () => {
 							Strona główna
 						</NavLink>
 					</div>
-					<div className={page === 'Kontakt' ? classes.active : ''}>
+					<div className={page === 'Kontakt' ? activeCss : navColor}>
 						<NavLink to='/kontakt' onClick={changePage}>
 							<span></span>
 							<span></span>

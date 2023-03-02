@@ -1,5 +1,5 @@
 .navBox {
-	background-color: rgba(250, 250, 250, 0.041);
+	background-color: rgba(0, 0, 0, 0.397);
 	width: 100%;
 	position: fixed;
 	display: flex;
@@ -32,10 +32,12 @@
 	top: -20px;
 	z-index: -10;
 	transform: rotate(90deg);
-	color: rgba(255, 255, 255, 0.247);
+}
+.logoIcon {
+	color: var(--logo-Icon);
 }
 .logoIconScrollDown {
-	color: rgba(66, 66, 66, 0.308);
+	color: var(--logo-icon-scrolDown);
 }
 .logo,
 .logoSmall,
@@ -46,6 +48,7 @@
 	font-weight: 600;
 	z-index: 10;
 }
+
 .logoSmall {
 	margin-bottom: 0.5em;
 	margin-top: 1em;
@@ -55,8 +58,9 @@
 .logoSmall a {
 	color: var(--logo);
 }
+
 .logoScrollDown a {
-	color: black;
+	color: var(--logo-ScrollDown);
 }
 
 .smallPages {
@@ -94,6 +98,13 @@
 	font-size: 14px;
 	transition: 0.3s;
 }
+.navColor a {
+	color: #ffffff;
+}
+.navColorScrollDown{
+	color: #000000;
+}
+
 .bigPages a span {
 	position: absolute;
 	display: block;
@@ -121,7 +132,7 @@
 	top: -100%;
 	height: 200%;
 	transform: rotate(30deg);
-	background: linear-gradient(180deg, transparent, #a6aaad88);
+	background: linear-gradient(180deg, transparent, #ffffffd7);
 	width: 1px;
 }
 
@@ -131,11 +142,18 @@
 .bigPages a:hover span:nth-child(2) {
 	right: 0px;
 }
+
 .bigPages a:hover {
 	color: #a6aaad;
 }
+
 .active a {
 	color: #f9f9fa;
+	font-weight: bold;
+}
+.activeScrollDown a {
+	font-weight: bold;
+	color: #0a0a0a;
 }
 
 .burger {
