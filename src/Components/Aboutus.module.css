@@ -27,6 +27,9 @@
 .aboutusTextBox h2 {
 	font-size: 2em;
 }
+.aboutusTextBox p {
+	font-size: 1.4em;
+}
 .cardBox {
 	position: relative;
 	margin: 10px 20px;
