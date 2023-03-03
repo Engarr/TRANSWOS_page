@@ -1,5 +1,4 @@
 .navBox {
-	background-color: rgba(0, 0, 0, 0.397);
 	width: 100%;
 	position: fixed;
 	display: flex;
@@ -10,6 +9,12 @@
 	font-size: 2em;
 	box-shadow: 0 0 5px #000000;
 	z-index: 100;
+}
+.navColorbg {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.navColorbgScrollDown {
+	background-color: rgba(245, 242, 242, 0.918);
 }
 .mainNav {
 	position: absolute;

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import classes from './Aboutus.module.css';
 import { GiCheckMark } from 'react-icons/gi';
+import { FaRegHandPointUp } from 'react-icons/fa';
 import tow from '../asset/tow.png';
 import navigation from '../asset/navigation.png';
 import safety from '../asset/safety.png';
@@ -33,6 +34,7 @@ const Aboutus = () => {
 						<div className={classes.more}>
 							<p>...</p>
 						</div>
+						<FaRegHandPointUp className={classes.hand} />
 					</div>
 
 					<div className={classes.cardTextBox}>
@@ -57,6 +59,7 @@ const Aboutus = () => {
 						<div className={classes.more}>
 							<p>...</p>
 						</div>
+						<FaRegHandPointUp className={classes.hand} />
 					</div>
 
 					<div className={classes.cardTextBox}>
@@ -72,7 +75,9 @@ const Aboutus = () => {
 						<img src={safety} className={classes.img} alt='usługa' />
 						<div className={classes.more}>
 							<p>...</p>
+							
 						</div>
+						<FaRegHandPointUp className={classes.hand} />
 					</div>
 
 					<div className={classes.cardTextBox}>

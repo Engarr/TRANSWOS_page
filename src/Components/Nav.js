@@ -40,9 +40,13 @@ const Nav = () => {
 		scrollPosition < 886 ? classes.active : classes.activeScrollDown;
 	const navColor =
 		scrollPosition < 886 ? classes.navColor : classes.navColorScrollDown;
+	const navbgColor =
+		scrollPosition < 886
+			? `${classes.navBox} ${classes.navColorbg}`
+			: `${classes.navBox} ${classes.navColorbgScrollDown}`;
 
 	return (
-		<div className={classes.navBox}>
+		<div className={navbgColor}>
 			<CookieBaner />
 			<div className={classes.mainNav}>
 				<div className={logoCss}>

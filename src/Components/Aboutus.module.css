@@ -28,7 +28,7 @@
 	font-size: 2em;
 }
 .aboutusTextBox p {
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 .cardBox {
 	position: relative;
@@ -52,19 +52,32 @@
 	height: 300px;
 	width: 400px;
 }
-.more {
+
+.more,
+.more p,
+.hand {
 	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	bottom: 50px;
+}
+.more {
+	width: 100%;
+	bottom: 80px;
 	left: 50%;
-	text-align: center;
 	transform: translate(-50%);
+}
+.more p {
 	width: 50px;
 	height: 50px;
 	border-radius: 25px;
 	box-shadow: 0 0 5px 1px rgb(167, 163, 163);
+}
+.hand {
+	bottom: 30px;
+	left: 55%;
+	font-size: 2em;
+	transform: translate(-50%) rotate(-20deg);
 	animation: pulse 2s forwards infinite;
 }
 .cardTextBox {
@@ -113,12 +126,12 @@
 
 @keyframes pulse {
 	0% {
-		transform: scale(1);
+		transform: scale(1) translate(-50%) rotate(-20deg);
 	}
 	50% {
-		transform: scale(1.1);
+		transform: scale(1.2) translate(-50%) rotate(-30deg);
 	}
 	100% {
-		transform: scale(1);
+		transform: scale(1) translate(-50%) rotate(-20deg);
 	}
 }
