@@ -1,15 +1,27 @@
 .cookieBaner {
 	position: relative;
-	top: 100px;
-	background-color: rgba(255, 255, 255, 0.651);
+	top: 0;
+	/* height: 100vh; */
 	width: 100%;
+	padding: 10px 20px;
+	z-index: -100;
 }
 .cookieBanerBox {
+	position: relative;
+	top: 700px;
+	left: 50%;
+	max-width: 500px;
+	transform: translate(-50%);
+	padding: 10px 20px;
 	font-size: 0.5em;
+	border-radius: 5px;
+	letter-spacing: 2px;
 	text-align: center;
+	color: white;
+	background-color: #070707e8;
 }
 .cookieBanerBox button {
-	padding: 0.5em;
+	padding: 10px 20px;
 	margin-left: 0.5em;
 	border-radius: 5px;
 	border: none;
@@ -19,15 +31,18 @@
 .cookieBanerBox button:hover {
 	background-color: rgb(177, 173, 173);
 }
-.cookieBanerBox a{
-    color: blue;
+.cookieBanerBox a {
+	color: white;
+	font-weight: bold;
+	margin-right: 1em;
 }
 @media only screen and (max-width: 768px) {
-    .cookieBaner {
-        font-size: 1.5em;
-    }
-    .cookieBanerBox button{
-        font-size: 1em;
-       
-    }
+	.cookieBaner {
+		font-size: 1.5em;
+		
+	}
+	.cookieBanerBox button {
+		font-size: 1em;
+		top: 70%;
+	}
 }

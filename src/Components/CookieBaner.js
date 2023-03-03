@@ -25,8 +25,8 @@ const CookieBaner = () => {
 							pliki cookies. Więcej szczegółów na ten temat znajdziesz na
 							stronie
 							<Link to='/polityka'> :Polityka Prywatności</Link>
-							<button onClick={hideBaner}>Akceptuje</button>
 						</p>
+							<button onClick={hideBaner}>Akceptuje</button>
 					</div>
 				</div>
 			)}

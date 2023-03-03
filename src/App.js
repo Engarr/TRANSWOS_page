@@ -13,15 +13,13 @@ function App() {
 			</header>
 			<main>
 				<Routes>
+					<Route element={<Navigate to='/' />} />
 					<Route path='/*' element={<Navigate to='/' />} />
 					<Route path='/' element={<Home />} />
 					<Route path='/kontakt' element={<Contact />} />
 					<Route path='/polityka' element={<Cookie />} />
 				</Routes>
 			</main>
-			
-				
-			
 		</div>
 	);
 }

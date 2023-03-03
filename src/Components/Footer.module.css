@@ -1,11 +1,10 @@
 .footer {
 	position: relative;
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
+	width: 100%;
 	font-weight: bold;
 	margin-top: 2em;
 	background-color: rgba(187, 180, 180, 0.445);
@@ -16,23 +15,33 @@
 
 .dataBox {
 	display: flex;
-	width: 40%;
+	width: 50%;
 	justify-content: space-around;
 	align-items: flex-start;
 	text-align: center;
+	margin-bottom: 2em;
 }
 .dataBox h3 {
 	font-size: 1.2em;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
-.telBox p{
+.telBox p {
 	margin-left: 0.2em;
+	font-weight: bold;
 }
-@media only screen and (max-width: 768px) {
-	.dataBox{
+
+@media only screen and (max-width: 760px) {
+	.dataBox {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+}
+@media only screen and (max-width: 1290px) {
+	.dataBox {
+		
+		width: 80%;
+		
 	}
 }

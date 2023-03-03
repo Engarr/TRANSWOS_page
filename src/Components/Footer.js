@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Footer.module.css';
-import { BsFillTelephoneFill } from 'react-icons/bs';
+import CallBtn from '../Components/CallBtn';
 
 const Footer = () => {
 	const currentDate = new Date();
@@ -15,8 +15,8 @@ const Footer = () => {
 					<p>37-716 Orły</p>
 				</div>
 				<div className={classes.telBox}>
-					<h3>Kontakt:</h3>
-					<p><BsFillTelephoneFill/> 608 450 246</p>
+					<h3>Zadzwoń:</h3>
+					<CallBtn />
 				</div>
 			</div>
 
