@@ -4,18 +4,13 @@
 	align-items: center;
 	flex-direction: column;
 	position: relative;
-
 	width: 100%;
+	padding: 1em;
+	overflow: hidden;
 }
 
-.cardContainer {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 3em;
-	margin-bottom: 2em;
-}
 .aboutusTextBox {
-	/* position: relative; */
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -30,9 +25,18 @@
 .aboutusTextBox p {
 	font-size: 1.2em;
 }
+
+.cardContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
 .cardBox {
 	position: relative;
-	margin: 10px 20px;
+	padding: 10px 20px;
 	width: 400px;
 	height: 500px;
 	perspective: 800px;
@@ -49,6 +53,10 @@
 }
 
 .img {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%);
 	height: 300px;
 	width: 400px;
 }
@@ -123,6 +131,13 @@
 	opacity: 0;
 	transform: rotateX(180deg);
 }
+.mapBox {
+	width: 100%;
+}
+.map {
+	width: 100%;
+	height: 300px;
+}
 
 @keyframes pulse {
 	0% {
@@ -133,5 +148,15 @@
 	}
 	100% {
 		transform: scale(1) translate(-50%) rotate(-20deg);
+	}
+}
+@media only screen and (max-width: 768px) {
+	.cardBox {
+		position: relative;
+		padding: 10px 20px;
+		width: 350px;
+		height: 400px;
+		perspective: 800px;
+		border-radius: 15px;
 	}
 }

@@ -15,7 +15,6 @@ const Nav = () => {
 	const [showMenu, setShowMenu] = useState(false);
 
 	const { scrollPosition } = useStateContext();
-	console.log(scrollPosition);
 
 	const changePage = (e) => {
 		setPage(e.target.textContent);
