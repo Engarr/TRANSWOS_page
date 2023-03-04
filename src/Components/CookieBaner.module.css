@@ -39,10 +39,11 @@
 @media only screen and (max-width: 768px) {
 	.cookieBaner {
 		font-size: 1.5em;
-		
+	}
+	.cookieBanerBox {
+		top: 500px;
 	}
 	.cookieBanerBox button {
 		font-size: 1em;
-		top: 70%;
 	}
 }
