@@ -1,68 +1,134 @@
 .contactBox {
+	background-color: #ffffff;
+	min-height: 100vh;
 	position: relative;
-	top: 100px;
-	height: 100vh;
 }
-.dataBox {
+.cardBox {
 	position: relative;
-	width: 80%;
-	left: 50%;
-	transform: translate(-50%);
-	padding: 1em 2em;
-	font-size: 1.2em;
-	text-align: center;
-	border-radius: 10px;
-	background-color: rgba(0, 0, 0, 0.527);
-	color: var(--text);
-	margin-bottom: 1em;
-	font-weight: bold;
-	max-width: 1400px;
-}
-
-.map {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
+	text-align: center;
+	top: 200px;
 	left: 50%;
 	transform: translate(-50%);
-	width: 85%;
-	height: 600px;
-
-	border-radius: 10px;
-	box-shadow: 0 0 5px rgb(0, 0, 0);
+	height: 250px;
+	width: 400px;
+	border-radius: 5px;
+	transition: height 0.3s, width 0.9s, box-shadow 0.3s;
 }
-.callBox {
+.text {
+	padding: 10px 20px;
+	letter-spacing: 2px;
+	height: 60%;
+	transition: height 0.5s;
+}
+.cardBox:hover {
+	height: 400px;
+	width: 800px;
+
+	box-shadow: 2px -1px 10px rgb(168, 162, 162);
+}
+.cardBox:hover .text {
+	height: 100%;
+}
+.cardBox:hover .hand {
+	opacity: 0;
+}
+.cardBox:hover .contactInfoBox {
+	opacity: 1;
+}
+.cardBox:hover .moreInfo {
+	opacity: 0;
+}
+.contactInfoBox {
+	position: absolute;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	width: 100%;
+	bottom: 20%;
+	opacity: 0;
+	transition: opacity 1s;
 }
-.callBtn {
+
+.phone,
+.location {
+	font-size: 1.6em;
+}
+.phone {
+	color: green;
+}
+.location {
+	color: rgb(235, 51, 27);
+}
+.mapBox {
+	position: absolute;
+	bottom: 0;
+	margin-top: 2em;
+	width: 100%;
+}
+.map {
+	height: 300px;
+	width: 100%;
+}
+.text h2 {
+	letter-spacing: 3px;
+	font-size: 3em;
+	font-family: 'Genos', sans-serif;
+	font-weight: 600;
+}
+.more {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1em 2em;
-	background-color: #4caf50;
-	color: white;
-	text-decoration: none;
-	border: none;
-	border-radius: 25px;
-	width: 300px;
-	height: 50px;
-	font-size: 1em;
-	cursor: pointer;
+	text-align: center;
 }
-.callBox p {
-	margin-left: 1em;
-}
-@media only screen and (max-width: 768px) {
-	.dataBox {
-		width: 95%;
 
-		font-size: 1em;
+.phoneBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	padding: 5px 20px;
+	border-radius: 25px;
+	box-shadow: 0 0 10px transparent;
+	transition: box-shadow 0.5s;
+}
+.phoneBox:hover {
+	box-shadow: 0 0 10px rgba(9, 252, 9, 0.363);
+	padding: 5px 20px;
+	border-radius: 25px;
+}
+.phoneBox p {
+	margin-left: 5px;
+}
+.moreInfo {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+.hand {
+	position: relative;
+	bottom: 20px;
+	left: 30%;
+	font-size: 2em;
+	transform: translate(-50%) rotate(-20deg);
+	animation: pulse 2s forwards infinite;
+	opacity: 1;
+
+	transition: opacity 0.5s;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1) translate(-50%) rotate(-20deg);
 	}
-	.map {
-		width: 95%;
+	50% {
+		transform: scale(1.2) translate(-50%) rotate(-30deg);
+	}
+	100% {
+		transform: scale(1) translate(-50%) rotate(-20deg);
 	}
 }

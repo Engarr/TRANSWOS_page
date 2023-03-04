@@ -6,7 +6,6 @@
 	align-items: center;
 	width: 100%;
 	font-weight: bold;
-	margin-top: 2em;
 	background-color: rgba(187, 180, 180, 0.445);
 }
 .footer p {
@@ -40,8 +39,6 @@
 }
 @media only screen and (max-width: 1290px) {
 	.dataBox {
-		
 		width: 80%;
-		
 	}
 }
