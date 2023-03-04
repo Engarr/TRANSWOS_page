@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/TRANSWOS_page/static/css/main.2e80be42.css",
-    "main.js": "/TRANSWOS_page/static/js/main.65f556fc.js",
+    "main.css": "/TRANSWOS_page/static/css/main.c8bc9fd4.css",
+    "main.js": "/TRANSWOS_page/static/js/main.0c5a91f4.js",
     "static/media/road.jpg": "/TRANSWOS_page/static/media/road.b69daeb0072e46bb588f.jpg",
     "static/media/tow.png": "/TRANSWOS_page/static/media/tow.0b83e53cb7229531d5a5.png",
     "static/media/safety.png": "/TRANSWOS_page/static/media/safety.7d94f88271002c476635.png",
     "static/media/navigation.png": "/TRANSWOS_page/static/media/navigation.3cea4c7ea1cbd6468007.png",
     "index.html": "/TRANSWOS_page/index.html",
-    "main.2e80be42.css.map": "/TRANSWOS_page/static/css/main.2e80be42.css.map",
-    "main.65f556fc.js.map": "/TRANSWOS_page/static/js/main.65f556fc.js.map"
+    "main.c8bc9fd4.css.map": "/TRANSWOS_page/static/css/main.c8bc9fd4.css.map",
+    "main.0c5a91f4.js.map": "/TRANSWOS_page/static/js/main.0c5a91f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e80be42.css",
-    "static/js/main.65f556fc.js"
+    "static/css/main.c8bc9fd4.css",
+    "static/js/main.0c5a91f4.js"
   ]
 }
