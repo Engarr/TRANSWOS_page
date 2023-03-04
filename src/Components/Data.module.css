@@ -90,8 +90,19 @@
 	.dataBox {
 		font-size: 0.8em;
 	}
+	.textBox {
+		top: 200px;
+	}
 	.textBox h1 {
-		font-size: 1.4em;
+		font-size: 2em;
 		letter-spacing: 0.5px;
+	}
+	.textBox h3 {
+		font-size: 1.6em;
+	}
+	.p{
+		font-size: 1.4em;
+		letter-spacing: 1px;
+		padding: 10px 20px;
 	}
 }
