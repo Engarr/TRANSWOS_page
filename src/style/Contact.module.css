@@ -1,7 +1,12 @@
 .contactBox {
-	background-color: #ffffff;
-	min-height: 100vh;
 	position: relative;
+	top: 100px;
+
+	overflow: hidden;
+}
+.cardContainer {
+	margin-top: 1em;
+	min-height: 500px;
 }
 .cardBox {
 	position: relative;
@@ -10,9 +15,9 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	top: 200px;
 	left: 50%;
 	transform: translate(-50%);
+
 	height: 250px;
 	width: 400px;
 	border-radius: 5px;
@@ -63,12 +68,7 @@
 .location {
 	color: rgb(235, 51, 27);
 }
-.mapBox {
-	position: absolute;
-	bottom: 0;
-	margin-top: 2em;
-	width: 100%;
-}
+
 .map {
 	height: 300px;
 	width: 100%;
@@ -121,6 +121,24 @@
 
 	transition: opacity 0.5s;
 }
+.smallPages {
+	position: relative;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 2em;
+}
+.SmallContactInfoBox {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 20px;
+	margin-top: 2em;
+	width: 100%;
+}
+
 @keyframes pulse {
 	0% {
 		transform: scale(1) translate(-50%) rotate(-20deg);
@@ -130,5 +148,19 @@
 	}
 	100% {
 		transform: scale(1) translate(-50%) rotate(-20deg);
+	}
+}
+@media only screen and (max-width: 768px) {
+	.smallPages {
+		display: flex;
+	}
+	.cardContainer {
+		display: none;
+	}
+	.phoneBox {
+		background-color: rgb(141, 236, 141);
+		box-shadow: 0 0 10px rgba(9, 252, 9, 0.363);
+		padding: 5px 20px;
+		border-radius: 25px;
 	}
 }

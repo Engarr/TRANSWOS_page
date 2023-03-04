@@ -4,10 +4,9 @@ import Nav from './Components/Nav';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Cookie from './pages/Cookie';
-
 function App() {
 	return (
-		<div className='App'>
+		<div className='app'>
 			<header>
 				<Nav />
 			</header>
@@ -20,6 +19,7 @@ function App() {
 					<Route path='/polityka' element={<Cookie />} />
 				</Routes>
 			</main>
+			
 		</div>
 	);
 }

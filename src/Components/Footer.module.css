@@ -6,7 +6,10 @@
 	align-items: center;
 	width: 100%;
 	font-weight: bold;
-	background-color: rgba(187, 180, 180, 0.445);
+	background-color: #050505bd;
+	color: white;
+	margin-top: 2em;
+	
 }
 .footer p {
 	margin-left: 0.5em;
