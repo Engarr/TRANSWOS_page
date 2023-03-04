@@ -5,12 +5,12 @@ import Aboutus from '../Components/Aboutus';
 import Footer from '../Components/Footer';
 
 const Home = () => {
-	
-
 	return (
 		<div className={classes.home}>
-			<Data />
-			<Aboutus />
+			<div>
+				<Data />
+				<Aboutus />
+			</div>
 			<Footer />
 		</div>
 	);

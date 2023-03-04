@@ -47,14 +47,12 @@
 		transform: rotate(-5deg);
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.callBtn {
 		margin-top: 1em;
 		padding: 10px 20px;
 		width: 200px;
 		height: 40px;
 		font-size: 1.4em;
-		
-
 	}
 }

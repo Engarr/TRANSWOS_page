@@ -1,4 +1,5 @@
 .dataBox {
+	position: relative;
 	height: 100vh;
 	text-align: center;
 	color: white;
@@ -18,18 +19,23 @@
 }
 .textBox {
 	position: absolute;
-	top: 150px;
+	top: 200px;
 	text-transform: uppercase;
 	animation: slide 2s forwards linear;
+}
+.p {
+	padding: 10px 20px;
 }
 
 .textBox h1 {
 	position: relative;
 	letter-spacing: 1px;
 	font-size: 2em;
+	margin-bottom: 1em;
 }
 .textBox h3 {
 	letter-spacing: 2px;
+	margin-bottom: 1em;
 }
 @keyframes slide {
 	0% {
@@ -54,7 +60,7 @@
 }
 .arrowBox {
 	position: absolute;
-	bottom: 100px;
+	bottom: -100px;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -86,12 +92,12 @@
 		bottom: 100px;
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.dataBox {
 		font-size: 0.8em;
 	}
 	.textBox {
-		top: 200px;
+		top: 110px;
 	}
 	.textBox h1 {
 		font-size: 2em;
@@ -100,9 +106,10 @@
 	.textBox h3 {
 		font-size: 1.6em;
 	}
-	.p{
+	.p {
 		font-size: 1.4em;
 		letter-spacing: 1px;
 		padding: 10px 20px;
 	}
+	
 }

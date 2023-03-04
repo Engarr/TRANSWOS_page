@@ -4,6 +4,7 @@ import Nav from './Components/Nav';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Cookie from './pages/Cookie';
+// import Footer from './Components/Footer';
 function App() {
 	return (
 		<div className='app'>
@@ -19,7 +20,9 @@ function App() {
 					<Route path='/polityka' element={<Cookie />} />
 				</Routes>
 			</main>
-			
+			{/* <footer>
+				<Footer />
+			</footer> */}
 		</div>
 	);
 }

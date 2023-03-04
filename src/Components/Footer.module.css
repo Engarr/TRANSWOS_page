@@ -4,12 +4,15 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	bottom: 0;
+	left: 0;
 	width: 100%;
 	font-weight: bold;
 	background-color: #050505bd;
 	color: white;
 	margin-top: 2em;
-	
+	padding: 10px 20px;
+	min-height: 300px;
 }
 .footer p {
 	margin-left: 0.5em;
@@ -24,13 +27,23 @@
 	margin-bottom: 2em;
 }
 .dataBox h3 {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: bold;
 	letter-spacing: 2px;
+	margin-bottom: 1em;
 }
+
 .telBox p {
 	margin-left: 0.2em;
 	font-weight: bold;
+	
+}
+.year{
+	position: absolute;
+	bottom: 0;
+	margin-top: 2em;
+	font-size: 1.4em;
+	padding: 10px 20px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -38,10 +51,24 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		width: 100%;
+	}
+	.telBox {
+		margin-top: 1em;
+	}
+
+	.footer p {
+		font-size: 0.9em;
+		margin-left: 0em;
 	}
 }
 @media only screen and (max-width: 1290px) {
+	
 	.dataBox {
 		width: 80%;
 	}
+	.footer {
+		min-height: 400px;
+	}
+
 }

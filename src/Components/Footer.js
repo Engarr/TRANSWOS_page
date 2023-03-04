@@ -20,7 +20,7 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<div>
+			<div className={classes.year}>
 				<p>
 					© Wszelkie prawa zastrzeżone <time id='current-year'>{year}</time>
 				</p>
