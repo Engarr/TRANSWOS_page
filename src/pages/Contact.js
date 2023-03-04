@@ -18,6 +18,7 @@ const Contact = () => {
 					<div className={classes.text}>
 						<h2>TRANSWOŚ</h2>
 						<p>Stanisław Woś</p>
+						<p></p>
 						<p className={classes.moreInfo}>Więcej...</p>
 						<div className={classes.more}>
 							<FaRegHandPointUp className={classes.hand} />

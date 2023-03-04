@@ -20,8 +20,8 @@ const Data = () => {
 			<img src={road} className={classes.img} alt='road' />
 			<div className={classes.data}>
 				<div className={classes.textBox}>
-					<h1>Usługi holowania pojazdów </h1>
-					<p>Pomoc drogowa do 14 ton</p>
+					<h1>Pomoc drogowa </h1>
+					<p>Usługi holowania pojazdów do 14 ton</p>
 					<p>Potrzebujesz pomocy?</p>
 					<h3>Zadzwoń!</h3>
 					<CallBtn />
