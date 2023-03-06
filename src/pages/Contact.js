@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from '../style/Contact.module.css';
 import Footer from '../Components/Footer';
-import { FaRegHandPointUp } from 'react-icons/fa';
+// import { FaRegHandPointUp } from 'react-icons/fa';
 
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { IoLocationSharp } from 'react-icons/io5';
@@ -19,16 +19,17 @@ const Contact = () => {
 						<h2>TRANSWOŚ</h2>
 						<p>Stanisław Woś</p>
 						<p></p>
-						<p className={classes.moreInfo}>Więcej...</p>
-						<div className={classes.more}>
+						{/* <p className={classes.moreInfo}>Więcej...</p> */}
+						{/* <div className={classes.more}>
 							<FaRegHandPointUp className={classes.hand} />
-						</div>
+						</div> */}
 					</div>
 					<div className={classes.contactInfoBox}>
-						<div>
+						<div className={classes.locationBox}>
 							<IoLocationSharp className={classes.location} />
 							<p> Orły</p>
 							<p> ul. Lipowa 88</p>
+							<p> 37-716 Orły</p>
 						</div>
 						<div className={classes.phoneBox} onClick={handleCall}>
 							<BsFillTelephoneFill className={classes.phone} />
@@ -67,7 +68,7 @@ const Contact = () => {
 					referrerpolicy='no-referrer-when-downgrade'
 					className={classes.map}></iframe>
 			</div>
-			
+
 			<Footer />
 		</div>
 	);
