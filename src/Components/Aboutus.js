@@ -5,13 +5,23 @@ import { FaRegHandPointUp } from 'react-icons/fa';
 import tow from '../asset/tow.png';
 import navigation from '../asset/navigation.png';
 import safety from '../asset/safety.png';
+import { useStateContext } from '../context/StateContext';
 
 const Aboutus = () => {
+	const { scrollPosition } = useStateContext();
+
 	const aboutUsRef = useRef();
+	const textRef = useRef();
+
+	let CssText;
+
+	if (scrollPosition > 230) {
+		CssText = classes.show;
+	}
 
 	return (
 		<section className={classes.aboutus} id='aboutus' ref={aboutUsRef}>
-			<div className={classes.aboutusTextBox}>
+			<div className={`${classes.aboutusTextBox} ${CssText}`} ref={textRef}>
 				<h2>O nas</h2>
 				<p>
 					Transwoś to firma specjalizująca się w świadczeniu usług pomocy
