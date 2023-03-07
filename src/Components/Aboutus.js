@@ -13,15 +13,15 @@ const Aboutus = () => {
 	const aboutUsRef = useRef();
 	const textRef = useRef();
 
-	let CssText;
+	let CssText = classes.show;
 
 	if (scrollPosition > 230) {
-		CssText = classes.show;
+		textRef.current.classList.add(`${CssText}`);
 	}
 
 	return (
 		<section className={classes.aboutus} id='aboutus' ref={aboutUsRef}>
-			<div className={`${classes.aboutusTextBox} ${CssText}`} ref={textRef}>
+			<div className={classes.aboutusTextBox} ref={textRef}>
 				<h2>O nas</h2>
 				<p>
 					Transwoś to firma specjalizująca się w świadczeniu usług pomocy

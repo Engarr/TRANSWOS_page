@@ -31,12 +31,8 @@
 	font-size: 1.2em;
 }
 .show {
-	animation: show 0.3s linear forwards;
+	animation: show 0.7s ease-in-out forwards;
 }
-/* .hide {
-	opacity: 0;
-	transform: translateX(-200%);
-} */
 
 @keyframes show {
 	0% {
@@ -193,5 +189,8 @@
 		height: 400px;
 		perspective: 800px;
 		border-radius: 15px;
+	}
+	.aboutusTextBox {
+		letter-spacing: 1px;
 	}
 }
