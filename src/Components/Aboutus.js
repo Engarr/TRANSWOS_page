@@ -13,7 +13,7 @@ const Aboutus = () => {
 	const aboutUsRef = useRef();
 	const textRef = useRef();
 
-	let CssText = classes.show;
+	const CssText = classes.show;
 
 	if (scrollPosition > 230) {
 		textRef.current.classList.add(`${CssText}`);

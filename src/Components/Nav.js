@@ -73,6 +73,14 @@ const Nav = () => {
 							Kontakt
 						</NavLink>
 					</div>
+					<div className={page === 'Galeria' ? activeCss : navColor}>
+						<NavLink to='/galery' onClick={changePage}>
+							<span></span>
+							<span></span>
+							<span></span>
+							Galeria
+						</NavLink>
+					</div>
 				</div>
 			</div>
 			{showMenu && (

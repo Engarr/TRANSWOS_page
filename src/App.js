@@ -4,7 +4,8 @@ import Nav from './Components/Nav';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Cookie from './pages/Cookie';
-// import Footer from './Components/Footer';
+import Galery from './pages/Galery';
+import ErrorPage from './pages/ErrorPage';
 function App() {
 	return (
 		<div className='app'>
@@ -14,15 +15,13 @@ function App() {
 			<main>
 				<Routes>
 					<Route element={<Navigate to='/' />} />
-					<Route path='/*' element={<Navigate to='/' />} />
 					<Route path='/' element={<Home />} />
 					<Route path='/kontakt' element={<Contact />} />
 					<Route path='/polityka' element={<Cookie />} />
+					<Route path='/galery' element={<Galery />} />
+					<Route path='*' element={<ErrorPage />} />
 				</Routes>
 			</main>
-			{/* <footer>
-				<Footer />
-			</footer> */}
 		</div>
 	);
 }
