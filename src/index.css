@@ -10,7 +10,7 @@ html {
 
 body {
 	margin: 0;
-	background-color: white;
+	background-color: var(--background-color);
 }
 a {
 	text-decoration: none;
@@ -18,7 +18,8 @@ a {
 }
 
 :root {
-	--background-color: #333;
+	
+	--background-color: #ddd;
 	--button-nav: #f1ab13;
 	--text: #ffffff;
 	--small-text: white;

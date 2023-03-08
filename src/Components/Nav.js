@@ -6,8 +6,8 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaWindowClose } from 'react-icons/fa';
 import Modal from './Modal';
 import { useStateContext } from '../context/StateContext';
-
 import CookieBaner from './CookieBaner';
+import DarkMode from './DarkMode';
 import { GiTireTracks } from 'react-icons/gi';
 
 const Nav = () => {
@@ -80,6 +80,9 @@ const Nav = () => {
 							<span></span>
 							Galeria
 						</NavLink>
+					</div>
+					<div>
+						<DarkMode />
 					</div>
 				</div>
 			</div>
