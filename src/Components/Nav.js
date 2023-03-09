@@ -128,6 +128,9 @@ const Nav = () => {
 									Kontakt
 								</NavLink>
 							</div>
+							<div>
+								<DarkMode />
+							</div>
 						</div>
 					</div>
 				</div>

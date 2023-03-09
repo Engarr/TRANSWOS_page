@@ -3,23 +3,31 @@ import { RiSunLine, RiMoonLine } from 'react-icons/ri';
 import classes from './DarkMode.module.css';
 
 const DarkMode = () => {
-	
-	const [ligth, setLigth] = useState(true);
-	const [dark, setDark] = useState(false);
+	const [mode, setMode] = useState('light');
 
+	const lightHandler = () => {
+		setMode('dark');
+	};
+	const darkHandler = () => {
+		setMode('light');
+	};
 
+	const modeCss =
+		mode === 'light'
+			? classes.light
+			: mode === 'dark'
+			? classes.dark
+			: classes.light;
+
+	console.log(mode);
 	return (
 		<div className={classes.buttonBox}>
-			<div className={`${classes.active}`}></div>
+			<div className={`${classes.active} ${modeCss}`}></div>
 			<div className={classes.iconBox}>
-				<button value='light'>
-					<RiSunLine />
-				</button>
+				<RiSunLine  onClick={darkHandler} />
 			</div>
 			<div className={classes.iconBox}>
-				<button value='dark'>
-					<RiMoonLine />
-				</button>
+				<RiMoonLine onClick={lightHandler} />
 			</div>
 		</div>
 	);
