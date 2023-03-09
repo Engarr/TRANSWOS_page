@@ -24,10 +24,10 @@ const DarkMode = () => {
 		<div className={classes.buttonBox}>
 			<div className={`${classes.active} ${modeCss}`}></div>
 			<div className={classes.iconBox}>
-				<RiSunLine  onClick={darkHandler} />
+				<RiSunLine  onClick={darkHandler} className={classes.icon} />
 			</div>
 			<div className={classes.iconBox}>
-				<RiMoonLine onClick={lightHandler} />
+				<RiMoonLine onClick={lightHandler}  className={classes.icon}/>
 			</div>
 		</div>
 	);
