@@ -31,7 +31,7 @@
 
 .active {
 	position: absolute;
-	background-color: #ddd;
+	background-color: var(--background-color);
 	box-shadow: 0 0 5px black;
 	border-radius: 50%;
 	width: 40px;
@@ -81,7 +81,7 @@
 	}
 	.active {
 		position: absolute;
-		background-color: #ddd;
+		background-color: var(--background-color);
 		box-shadow: 0 0 5px black;
 		border-radius: 50%;
 		width: 40px;

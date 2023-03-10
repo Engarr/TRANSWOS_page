@@ -1,6 +1,4 @@
-
-.backdrop  {
-
+.backdrop {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -9,5 +7,5 @@
 	max-height: 1600px;
 	width: 100%;
 	z-index: 10;
-	background-color: rgba(0, 0, 0, 0.774);
+	background-color: var(--transparent-black);
 }

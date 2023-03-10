@@ -4,8 +4,8 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-color: #333;
-	color: white;
+	background-color: var(--background-color);
+	color: var(--white);
 }
 .main h2 {
 	letter-spacing: 1px;
@@ -25,7 +25,7 @@
 	overflow: hidden;
 	transition: 0.2s;
 	font-size: 14px;
-	color: white;
+	color: var(--white);
 }
 .main a:hover {
 	background-color: #a6aaad;

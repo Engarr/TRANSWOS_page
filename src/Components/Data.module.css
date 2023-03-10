@@ -2,7 +2,7 @@
 	position: relative;
 	height: 100vh;
 	text-align: center;
-	color: white;
+	color: var(--white);
 	font-size: 1.2em;
 	top: 0;
 }
@@ -15,7 +15,7 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.678);
+	background-color: var(--transparent-black);
 }
 .textBox {
 	position: absolute;
@@ -72,7 +72,7 @@
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	color: black;
+	color: var(--black);
 }
 
 @keyframes arrow {
@@ -111,5 +111,4 @@
 		letter-spacing: 1px;
 		padding: 10px 20px;
 	}
-	
 }

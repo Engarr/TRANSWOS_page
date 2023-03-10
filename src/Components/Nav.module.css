@@ -188,13 +188,13 @@
 }
 .activeScrollDown a {
 	font-weight: bold;
-	color: #0a0a0a;
+	color: var(--black);
 }
 
 .burger {
 	display: none;
 	font-size: 1.5em;
-	color: white;
+	color: var(--white);
 }
 
 @media only screen and (max-width: 768px) {

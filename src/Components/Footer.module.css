@@ -8,8 +8,8 @@
 	left: 0;
 	width: 100%;
 	font-weight: bold;
-	background-color: #050505bd;
-	color: white;
+	background-color: var(--transparent-black);
+	color: var(--white);
 	margin-top: 2em;
 	padding: 10px 20px;
 	min-height: 300px;

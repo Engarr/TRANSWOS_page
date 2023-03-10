@@ -114,69 +114,7 @@
 .SmallContactInfoBox div:nth-child(1) {
 	margin-bottom: 2em;
 }
-/* @keyframes pulse {
-	0% {
-		transform: scale(1) translate(-50%) rotate(-20deg);
-	}
-	50% {
-		transform: scale(1.2) translate(-50%) rotate(-30deg);
-	}
-	100% {
-		transform: scale(1) translate(-50%) rotate(-20deg);
-	}
-} */
-/* .more {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-} */
-/* .moreInfo {
-	opacity: 1;
-	transition: opacity 0.3s;
-}
 
-.hand {
-	position: relative;
-	bottom: 20px;
-	left: 30%;
-	font-size: 2em;
-	transform: translate(-50%) rotate(-20deg);
-	animation: pulse 2s forwards infinite;
-	opacity: 1;
-
-	transition: opacity 0.5s;
-} */
-
-/* .cardBox:hover {
-	height: 400px;
-	width: 800px;
-
-	box-shadow: 2px -1px 10px rgb(168, 162, 162);
-}
-.cardBox:hover .text {
-	height: 100%;
-}
-.cardBox:hover .hand {
-	opacity: 0;
-}
-.cardBox:hover .contactInfoBox {
-	opacity: 1;
-}
-.cardBox:hover .moreInfo {
-	opacity: 0;
-}
-.contactInfoBox {
-	position: absolute;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-	bottom: 20%;
-	opacity: 0;
-	transition: opacity 1s;
-} */
 
 @media only screen and (max-width: 1367px) {
 	.smallPages {
