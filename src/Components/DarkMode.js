@@ -1,16 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RiSunLine, RiMoonLine } from 'react-icons/ri';
 import classes from './DarkMode.module.css';
 
+const themeStyle = localStorage.getItem('theme');
+
 const DarkMode = () => {
-	const [mode, setMode] = useState('light');
+	const [mode, setMode] = useState(themeStyle || 'light');
 
 	const lightHandler = () => {
 		setMode('dark');
+		localStorage.setItem('theme', 'dark');
 	};
 	const darkHandler = () => {
 		setMode('light');
+		localStorage.setItem('theme', 'light');
 	};
+	useEffect(() => {
+		const theme = localStorage.getItem('theme');
+		const body = document.body;
+		body.classList.add(theme);
+		return () => {
+			body.classList.remove(theme);
+		};
+	}, [mode]);
 
 	const modeCss =
 		mode === 'light'
@@ -24,10 +36,10 @@ const DarkMode = () => {
 		<div className={classes.buttonBox}>
 			<div className={`${classes.active} ${modeCss}`}></div>
 			<div className={classes.iconBox}>
-				<RiSunLine  onClick={darkHandler} className={classes.icon} />
+				<RiSunLine onClick={darkHandler} className={classes.icon} />
 			</div>
 			<div className={classes.iconBox}>
-				<RiMoonLine onClick={lightHandler}  className={classes.icon}/>
+				<RiMoonLine onClick={lightHandler} className={classes.icon} />
 			</div>
 		</div>
 	);

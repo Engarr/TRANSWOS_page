@@ -4,7 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-color: var(--background-color);
+	background-color: #333;
 	color: var(--white);
 }
 .main h2 {

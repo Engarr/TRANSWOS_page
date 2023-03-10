@@ -30,3 +30,20 @@ a {
 	--black: #000000;
 	--transparent-black: rgba(0, 0, 0, 0.774);
 }
+/* 
+body.light {
+	--background-color: #ddd;
+	--button-nav: #f1ab13;
+	--text: #ffffff;
+	--small-text: white;
+	--logo: rgb(255, 255, 255);
+	--logo-ScrollDown: rgb(0, 0, 0);
+	--logo-Icon: rgba(255, 255, 255, 0.247);
+	--logo-icon-scrolDown: rgba(66, 66, 66, 0.308);
+	--white: #ffffff;
+	--black: #000000;
+	--transparent-black: rgba(0, 0, 0, 0.774);
+}
+body.dark {
+	--background-color: #333;
+} */
