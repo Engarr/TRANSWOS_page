@@ -14,7 +14,7 @@
 	background-color: rgba(0, 0, 0, 0.5);
 }
 .navColorbgScrollDown {
-	background-color: rgba(245, 242, 242, 0.918);
+	background-color: var(--navColorbgScrollDown);
 }
 .mainNav {
 	position: absolute;

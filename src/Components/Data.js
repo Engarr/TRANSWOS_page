@@ -9,7 +9,7 @@ const Data = () => {
 		const element = document.getElementById(id);
 		const offset = element.getBoundingClientRect().top + window.pageYOffset;
 		const bodyMargin = parseInt(getComputedStyle(document.body).marginTop, 10);
-		const targetOffset = offset - bodyMargin - 80;
+		const targetOffset = offset - bodyMargin - 100;
 		window.scrollTo({
 			top: targetOffset,
 			behavior: 'smooth',
