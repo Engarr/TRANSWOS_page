@@ -37,8 +37,7 @@ const Nav = () => {
 		scrollPosition < 886 ? classes.logoIcon : classes.logoIconScrollDown;
 	const activeCss =
 		scrollPosition < 886 ? classes.active : classes.activeScrollDown;
-	const navColor =
-		scrollPosition < 886 ? classes.navColor : classes.navColorScrollDown;
+
 	const navbgColor =
 		scrollPosition < 886
 			? `${classes.navBox} ${classes.navColorbg}`
@@ -57,7 +56,8 @@ const Nav = () => {
 				<GiHamburgerMenu className={classes.burger} onClick={navHandler} />
 
 				<div className={classes.bigPages}>
-					<div className={page === 'Strona główna' ? activeCss : navColor}>
+					<div
+						className={page === 'Strona główna' ? activeCss : classes.navColor}>
 						<NavLink to='/' onClick={changePage}>
 							<span></span>
 							<span></span>
@@ -65,7 +65,7 @@ const Nav = () => {
 							Strona główna
 						</NavLink>
 					</div>
-					<div className={page === 'Kontakt' ? activeCss : navColor}>
+					<div className={page === 'Kontakt' ? activeCss : classes.navColor}>
 						<NavLink to='/kontakt' onClick={changePage}>
 							<span></span>
 							<span></span>
@@ -73,7 +73,7 @@ const Nav = () => {
 							Kontakt
 						</NavLink>
 					</div>
-					<div className={page === 'Galeria' ? activeCss : navColor}>
+					<div className={page === 'Galeria' ? activeCss : classes.navColor}>
 						<NavLink to='/galery' onClick={changePage}>
 							<span></span>
 							<span></span>

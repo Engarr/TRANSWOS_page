@@ -51,9 +51,9 @@ body.dark {
 	--text: #ffffff;
 	--small-text: white;
 	--logo: rgb(255, 255, 255);
-	--logo-ScrollDown: rgb(0, 0, 0);
+	--logo-ScrollDown: rgb(252, 247, 247);
 	--logo-Icon: rgba(255, 255, 255, 0.247);
-	--logo-icon-scrolDown: rgba(66, 66, 66, 0.308);
+	--logo-icon-scrolDown: rgba(235, 230, 230, 0.308);
 	--white: #ffffff;
 	--black: #fcfcfc;
 	--transparent-black: rgba(0, 0, 0, 0.774);
