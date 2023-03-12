@@ -12,9 +12,11 @@
 }
 .navColorbg {
 	background-color: rgba(0, 0, 0, 0.5);
+	transition: background-color 0.3s;
 }
 .navColorbgScrollDown {
 	background-color: var(--navColorbgScrollDown);
+	transition: background-color 0.3s;
 }
 .mainNav {
 	position: absolute;
@@ -40,9 +42,11 @@
 }
 .logoIcon {
 	color: var(--logo-Icon);
+	transition: color 0.3s;
 }
 .logoIconScrollDown {
 	color: var(--logo-icon-scrolDown);
+	transition: color 0.3s;
 }
 .logo,
 .logoSmall,
@@ -61,12 +65,15 @@
 
 .logo a {
 	color: var(--logo);
+	transition: color 0.3s;
 }
 .logoSmall {
-	color: black;
+	color: var(--black);
+	transition: color 0.3s;
 }
 .logoScrollDown a {
 	color: var(--logo-ScrollDown);
+	transition: color 0.3s;
 }
 /* BURGER MENU */
 .smallPages {
