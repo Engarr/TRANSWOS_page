@@ -29,6 +29,7 @@ a {
 	--white: #ffffff;
 	--black: #000000;
 	--transparent-black: rgba(0, 0, 0, 0.774);
+	--button-bg: #a6aaad;
 }
 
 body.light {
@@ -44,6 +45,7 @@ body.light {
 	--black: #000000;
 	--transparent-black: rgba(0, 0, 0, 0.548);
 	--navColorbgScrollDown: rgba(245, 242, 242, 0.918);
+	--button-bg: #0e0d0d79;
 }
 body.dark {
 	--background-color: #333;
@@ -58,4 +60,5 @@ body.dark {
 	--black: #fcfcfc;
 	--transparent-black: rgba(0, 0, 0, 0.774);
 	--navColorbgScrollDown: rgba(63, 62, 62, 0.918);
+	--button-bg: #a6aaad;
 }

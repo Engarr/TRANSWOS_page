@@ -23,6 +23,7 @@ const DarkMode = () => {
 			body.classList.remove(theme);
 		};
 	}, [mode]);
+	const bgCss = mode === 'light' ? classes.lightBg : classes.darkBg;
 
 	const modeCss =
 		mode === 'light'
@@ -33,7 +34,7 @@ const DarkMode = () => {
 
 	console.log(mode);
 	return (
-		<div className={classes.buttonBox}>
+		<div className={`${classes.buttonBox} ${bgCss}`}>
 			<div className={`${classes.active} ${modeCss}`}></div>
 			<div className={classes.iconBox}>
 				<RiSunLine onClick={darkHandler} className={classes.icon} />

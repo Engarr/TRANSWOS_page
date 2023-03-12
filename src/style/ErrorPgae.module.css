@@ -4,8 +4,8 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-color: #333;
-	color: var(--white);
+	background-color: var(--background-color);
+	color: var(--black);
 }
 .main h2 {
 	letter-spacing: 1px;
@@ -25,11 +25,12 @@
 	overflow: hidden;
 	transition: 0.2s;
 	font-size: 14px;
-	color: var(--white);
+	color: var(--black);
 }
 .main a:hover {
-	background-color: #a6aaad;
-	box-shadow: 0 0 10px #a6aaad, 0 0 40px #a6aaad, 0 0 80px #a6aaad;
+	background-color: var(--button-bg);
+	box-shadow: 0 0 10px var(--button-bg), 0 0 40px var(--button-bg),
+		0 0 80px var(--button-bg);
 	padding: 15px 60px;
 	transition: 0.5s;
 	transition-delay: 1s;
