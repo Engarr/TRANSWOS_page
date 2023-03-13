@@ -101,7 +101,7 @@ const Aboutus = () => {
 						</div>
 						<div>
 							<GiCheckMark className={classes.icon} />
-							<p>Zapewnimy Ci bezpieczny i terminowy transport.</p>
+							<p>Bezpieczny i terminowy transport.</p>
 						</div>
 					</div>
 				</div>
