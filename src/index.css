@@ -23,13 +23,14 @@ a {
 	--text: #ffffff;
 	--small-text: white;
 	--logo: rgb(255, 255, 255);
-	--logo-ScrollDown: rgb(0, 0, 0);
+	--logo-ScrollDown: rgb(243, 235, 235);
 	--logo-Icon: rgba(255, 255, 255, 0.247);
-	--logo-icon-scrolDown: rgba(66, 66, 66, 0.308);
+	--logo-icon-scrolDown: rgba(26, 24, 24, 0.308);
 	--white: #ffffff;
 	--black: #000000;
 	--transparent-black: rgba(0, 0, 0, 0.548);
-	--button-bg: #a6aaad;
+	--navColorbgScrollDown: rgba(0, 0, 0, 0.548);
+	--button-bg: #0e0d0d79;
 }
 
 body.light {
