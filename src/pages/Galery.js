@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import classes from '../style/Galery.module.css';
 
@@ -12,8 +12,8 @@ const Galery = () => {
 	const imgLength = images.length - 1;
 
 	const indexhandlerOnClick = (e) => {
-		setActiveIndex(e.target.alt);
-		console.log(activeIndex);
+		const index = Number(e.target.dataset.index);
+		setActiveIndex(index);
 	};
 
 	const indexHandlerRight = (e) => {
@@ -58,6 +58,7 @@ const Galery = () => {
 								key={index}
 								src={image}
 								alt={`${index}`}
+								data-index={index}
 								className={`${classes.image} ${classes.active}`}
 								onClick={indexhandlerOnClick}
 							/>
@@ -65,6 +66,7 @@ const Galery = () => {
 							<img
 								key={index}
 								src={image}
+								data-index={index}
 								alt={`${index}`}
 								className={`${classes.image}`}
 								onClick={indexhandlerOnClick}
