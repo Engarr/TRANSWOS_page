@@ -15,14 +15,44 @@
 	justify-content: center;
 	align-items: center;
 }
-.mainPhoto {
+.mainPhotoBox {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 	max-width: 800px;
-	border-radius: 5px;
-	box-shadow: 0 0 5px var(--black);
+}
+.mainPhoto {
+	border-radius: 2px;
+	height: 100%;
+	width: 100%;
 }
 .imageBox {
 	margin-top: 2em;
 	padding: 5px 10px;
+}
+.switchBtnLeft,
+.switchBtnRight {
+	position: absolute;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--arrow-bg);
+	margin: 0.5em;
+	height: 100%;
+	cursor: pointer;
+}
+.switchBtnRight {
+	right: -10px;
+}
+.switchBtnLeft {
+	left: -10px;
+}
+.icon {
+	font-size: 30px;
+	color: var(--black);
 }
 .image {
 	width: 100px;

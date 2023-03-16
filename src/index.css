@@ -44,6 +44,7 @@ body.light {
 	--logo-icon-scrolDown: rgba(26, 24, 24, 0.308);
 	--white: #ffffff;
 	--black: #000000;
+	--arrow-bg: #ffffff65;
 	--transparent-black: rgba(0, 0, 0, 0.548);
 	--navColorbgScrollDown: rgba(0, 0, 0, 0.548);
 	--button-bg: #0e0d0d79;
@@ -57,8 +58,9 @@ body.dark {
 	--logo-ScrollDown: rgb(252, 247, 247);
 	--logo-Icon: rgba(255, 255, 255, 0.247);
 	--logo-icon-scrolDown: rgba(235, 230, 230, 0.308);
-	--white: #ffffff;
+	--white: #fffefe;
 	--black: #fcfcfc;
+	--arrow-bg: #0000004f;
 	--transparent-black: rgba(0, 0, 0, 0.774);
 	--navColorbgScrollDown: rgba(63, 62, 62, 0.918);
 	--button-bg: #a6aaad;

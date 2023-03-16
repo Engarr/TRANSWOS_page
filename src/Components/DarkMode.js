@@ -6,6 +6,7 @@ const themeStyle = localStorage.getItem('theme');
 
 const DarkMode = () => {
 	const [mode, setMode] = useState(themeStyle || 'light');
+	
 
 	const lightHandler = () => {
 		setMode('dark');
