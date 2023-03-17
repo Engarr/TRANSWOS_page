@@ -32,7 +32,18 @@
 	width: 100%;
 	z-index: 1;
 	opacity: 0;
-	animation: showup 0.7s ease forwards;
+}
+
+.show {
+	animation: show 0.3s linear forwards;
+}
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 /* //////////////// */
 .zoomedBg {
@@ -134,11 +145,11 @@
 	width: 120px;
 	box-shadow: 0 0 5px var(--black);
 }
-@keyframes showup {
+/* @keyframes showup {
 	0% {
 		opacity: 0;
 	}
 	100% {
 		opacity: 1;
 	}
-}
+} */

@@ -17,31 +17,45 @@ const Galery = () => {
 	const indexhandlerOnClick = (e) => {
 		const index = Number(e.target.dataset.index);
 		setActiveIndex(index);
+		switchPhoto();
+	};
+
+	const switchPhoto = () => {
+		const photo = document.querySelector(`.${classes.mainPhoto}`);
+		const animationClass = `${classes.show}`;
+
+		photo.classList.remove(animationClass);
+		setTimeout(() => {
+			photo.classList.add(animationClass);
+		}, 10);
 	};
 
 	const indexHandlerRight = (e) => {
 		e.stopPropagation();
 		if (activeIndex >= 0) {
 			setActiveIndex((prev) => prev + 1);
+			switchPhoto();
 		}
 		if (activeIndex === imgLength) {
 			setActiveIndex(0);
+			switchPhoto();
 		}
 	};
 	const indexHandlerLeft = (e) => {
 		e.stopPropagation();
 		if (activeIndex > 0) {
 			setActiveIndex((prev) => prev - 1);
+			switchPhoto();
 		}
 		if (activeIndex === 0) {
 			setActiveIndex(imgLength);
+			switchPhoto();
 		}
 	};
 	const zoomHandler = (e) => {
 		e.stopPropagation();
 		setZoomed((prev) => !prev);
 	};
-
 
 	return (
 		<>
@@ -60,7 +74,7 @@ const Galery = () => {
 						<img
 							src={images[activeIndex]}
 							alt={'zdjęcie główne'}
-							className={`${classes.zoomedImg} `}
+							className={`${classes.zoomedImg}`}
 							onClick={(e) => e.stopPropagation()}
 						/>
 						<div onClick={indexHandlerRight} className={classes.nextBox}>
@@ -75,10 +89,11 @@ const Galery = () => {
 						<div className={classes.switchBtnLeft} onClick={indexHandlerLeft}>
 							<GoArrowLeft className={classes.icon} />
 						</div>
+
 						<img
 							src={images[activeIndex]}
 							alt={'zdjęcie główne'}
-							className={`${classes.mainPhoto} `}
+							className={`${classes.mainPhoto}  ${classes.show} `}
 							onClick={zoomHandler}
 						/>
 						<div className={classes.switchBtnRight} onClick={indexHandlerRight}>
