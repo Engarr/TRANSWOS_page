@@ -2,6 +2,7 @@
 	position: relative;
 	top: 200px;
 	text-align: center;
+	height: auto;
 }
 
 .imagesContainer {
@@ -21,12 +22,83 @@
 	justify-content: center;
 	align-items: center;
 	max-width: 800px;
+	cursor: zoom-in;
 }
 .mainPhoto {
+	position: relative;
+	display: block;
 	border-radius: 2px;
 	height: 100%;
 	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	animation: showup 0.7s ease forwards;
 }
+/* //////////////// */
+.zoomedBg {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #9792929a;
+	z-index: 999;
+}
+.zoomedImg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+}
+.closeBox,
+.nextBox,
+.prevBox {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+}
+
+.closeBox {
+	right: 5%;
+	top: 2%;
+	background-color: rgba(0, 0, 0, 0.479);
+	border-radius: 5px;
+}
+
+.closeIcon {
+	color: white;
+	font-size: 40px;
+	transition: transform 0.3s;
+	cursor: pointer;
+}
+.closeIcon:hover {
+	transform: rotate(90deg);
+}
+.nextBox,
+.prevBox {
+	background-color: #fff;
+
+	border-radius: 50%;
+	box-shadow: 0 0 5px black;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.zoomedIconPrev,
+.zoomedIconNext {
+	position: relative;
+	font-size: 36px;
+}
+.prevBox {
+	left: 10%;
+}
+.nextBox {
+	right: 10%;
+}
+/* //////////////// */
 .imageBox {
 	margin-top: 2em;
 	padding: 5px 10px;
@@ -41,6 +113,7 @@
 	background-color: var(--arrow-bg);
 	margin: 0.5em;
 	height: 100%;
+	z-index: 2;
 	cursor: pointer;
 }
 .switchBtnRight {
@@ -58,6 +131,14 @@
 	cursor: pointer;
 }
 .active {
-	width: 150px;
+	width: 120px;
 	box-shadow: 0 0 5px var(--black);
+}
+@keyframes showup {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
