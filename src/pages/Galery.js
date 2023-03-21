@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
+// import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
+
 import { MdOutlineClose } from 'react-icons/md';
 import { GrNext, GrPrevious } from 'react-icons/gr';
 import classes from '../style/Galery.module.css';
@@ -74,7 +75,7 @@ const Galery = () => {
 						<img
 							src={images[activeIndex]}
 							alt={'zdjęcie główne'}
-							className={`${classes.zoomedImg}`}
+							className={`${classes.zoomedImg} ${classes.show}`}
 							onClick={(e) => e.stopPropagation()}
 						/>
 						<div onClick={indexHandlerRight} className={classes.nextBox}>
@@ -87,7 +88,7 @@ const Galery = () => {
 				<div className={classes.bigImage}>
 					<div className={classes.mainPhotoBox}>
 						<div className={classes.switchBtnLeft} onClick={indexHandlerLeft}>
-							<GoArrowLeft className={classes.icon} />
+							<GrPrevious className={classes.icon} />
 						</div>
 
 						<img
@@ -97,7 +98,7 @@ const Galery = () => {
 							onClick={zoomHandler}
 						/>
 						<div className={classes.switchBtnRight} onClick={indexHandlerRight}>
-							<GoArrowRight className={classes.icon} />
+							<GrNext className={classes.icon} />
 						</div>
 					</div>
 				</div>
