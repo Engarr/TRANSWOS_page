@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Nav from './Components/Nav';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -14,7 +14,7 @@ function App() {
 			</header>
 			<main>
 				<Routes>
-					<Route element={<Navigate to='/' />} />
+					{/* <Route element={<Navigate to='/' />} /> */}
 					<Route path='/' element={<Home />} />
 					<Route path='/kontakt' element={<Contact />} />
 					<Route path='/polityka' element={<Cookie />} />

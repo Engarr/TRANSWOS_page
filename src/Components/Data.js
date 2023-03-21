@@ -26,11 +26,11 @@ const Data = () => {
 					<h3>Zadzwoń!</h3>
 					<CallBtn />
 				</div>
-				<div
-					className={classes.arrowBox}
-					onClick={() => scrollToSection('aboutus')}>
-					<SlArrowDown className={classes.arrow} />
-				</div>
+			</div>
+			<div
+				className={classes.arrowBox}
+				onClick={() => scrollToSection('aboutus')}>
+				<SlArrowDown className={classes.arrow} />
 			</div>
 		</section>
 	);
