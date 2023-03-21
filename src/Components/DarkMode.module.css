@@ -13,7 +13,7 @@
 	margin-left: 0.5em;
 }
 .lightBg {
-	background-color: rgb(248, 243, 170);
+	background-color: rgba(123, 190, 59, 0.767);
 }
 .darkBg {
 	background-color: grey;
@@ -47,10 +47,10 @@
 }
 
 .light {
-	animation: slideUp 0.3s linear forwards;
+	animation: slideUp 0.2s linear forwards;
 }
 .dark {
-	animation: slideDown 0.3s linear forwards;
+	animation: slideDown 0.2s linear forwards;
 }
 @keyframes slideUp {
 	0% {
@@ -58,7 +58,7 @@
 		transform: scale(1);
 	}
 	50% {
-		transform: scale(0.7);
+		transform: scale(1.1);
 	}
 	100% {
 		transform: scale(1);
@@ -72,7 +72,7 @@
 		transform: scale(1);
 	}
 	50% {
-		transform: scale(0.7);
+		transform: scale(1.1);
 	}
 	100% {
 		top: 35px;

@@ -6,7 +6,6 @@ const themeStyle = localStorage.getItem('theme');
 
 const DarkMode = () => {
 	const [mode, setMode] = useState(themeStyle || 'light');
-	
 
 	const lightHandler = () => {
 		setMode('dark');
@@ -33,7 +32,6 @@ const DarkMode = () => {
 			? classes.dark
 			: classes.light;
 
-	console.log(mode);
 	return (
 		<div className={`${classes.buttonBox} ${bgCss}`}>
 			<div className={`${classes.active} ${modeCss}`}></div>
